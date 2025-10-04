@@ -1,16 +1,9 @@
 [
     {
         "device_id": "7f3b660b84cef9a1",
-        "username": "user1",
-        "password": "pass123",
+        "username": "GRAPFIFA",
+        "password": "1234",
         "expirydate": "15-10-2025",
-        "Allowoffline": "false"
-    },
-    {
-        "device_id": "12345",
-        "username": "user2",
-        "password": "pass123",
-        "expirydate": "15-06-2025",
         "Allowoffline": false
     }
 ]
