@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ee745acef8ded640",
+    "key": "thanhdo",
+    "expiresAt": "2025-06-30",
+    "allowOffline": true
+  },
+{
+    "id": "768384dbedf52166",
+    "key": "key123",
+    "expiresAt": "2026-05-30",
+    "allowOffline": true
+  },
+{
+    "id": "dc5f0b3fc128bad0",
+    "key": "vuduong",
+    "expiresAt": "2026-05-30",
+    "allowOffline": true
+  },
+    {
+    "id": "4d08dec8c7614192",
+    "key": "dung",
+    "expiresAt": "2026-05-30",
+    "allowOffline": true
+  },
+    {
+    "id": "45b10b75dfbf5a16",
+    "key": "thanhtuong",
+    "expiresAt": "2026-05-30",
+    "allowOffline": true
+  }
+]
