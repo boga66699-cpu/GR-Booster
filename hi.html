@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chào mừng Ngày Phụ Nữ Việt Nam 20-10</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body, html { height: 100%; scroll-behavior: smooth; }
+
+    section.scene {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      z-index: 1;
+    }
+    section.scene.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    /* Hiệu ứng fade in cho nội dung */
+    .fade-in {
+      animation: fadeIn 2.5s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Hoa rơi nhẹ, đa dạng hơn */
+    .petal {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: rgba(255, 105, 180, 0.8); /* Màu hồng rực rỡ hơn */
+      border-radius: 50% 50% 0 50%;
+      animation: fall 8s linear infinite;
+      left: calc(100vw * var(--left));
+      animation-delay: calc(5s * var(--delay));
+      transform: scale(var(--scale)) rotate(var(--rotate));
+    }
+    @keyframes fall {
+      0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+
+    /* Văn bản với shadow mạnh hơn để dễ đọc */
+    h1 { font-size: 3.5em; margin-bottom: 20px; text-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+    p { max-width: 900px; font-size: 1.3em; line-height: 1.8; text-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+
+    /* Gradient màu sắc rực rỡ, hài hòa hơn (tăng độ bão hòa) */
+    #scene1 {
+      background: linear-gradient(to bottom right, #ff69b4, #ffd700); /* Hồng nóng đến vàng sáng */
+    }
+    #scene2 {
+      background: linear-gradient(to top right, #ff1493, #ffa500); /* Hồng đậm đến cam rực */
+    }
+    #scene3 {
+      background: linear-gradient(to bottom left, #db7093, #ffcc00); /* Hồng nhạt đến vàng chanh */
+    }
+    #scene4 {
+      background: linear-gradient(to right, #c71585, #f4a460); /* Hồng tím đến cam đất */
+      color: #fff; /* Đổi màu text để dễ đọc trên background rực */
+    }
+    #scene4 h1 { color: #ff4500; text-shadow: 0 4px 15px rgba(0,0,0,0.5); } /* Màu đỏ cam rực cho h1 */
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5em; }
+      p { font-size: 1em; }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- CẢNH 1: MỞ ĐẦU -->
+<section id="scene1" class="scene active">
+  <h1 class="fade-in">🌸 Chào mừng Ngày Phụ Nữ Việt Nam 20-10 🌸</h1>
+  <p class="fade-in" style="animation-delay: 0.5s;">Hôm nay, chúng ta cùng gửi lời chúc tốt đẹp nhất đến những người phụ nữ — những bông hoa tỏa hương giữa cuộc đời.</p>
+</section>
+
+<!-- CẢNH 2: Ý NGHĨA NGÀY 20/10 -->
+<section id="scene2" class="scene">
+  <h1 class="fade-in">💖 Ý nghĩa ngày 20-10 💖</h1>
+  <p class="fade-in" style="animation-delay: 1s;">
+    Ngày 20/10 là dịp đặc biệt để tôn vinh phụ nữ Việt Nam – những người mẹ, người vợ, người chị đã cống hiến và hy sinh thầm lặng.  
+    Họ là biểu tượng của tình yêu thương, sự kiên cường và lòng nhân hậu.  
+    Mỗi người phụ nữ đều mang trong mình vẻ đẹp riêng – từ sự mạnh mẽ trong cuộc sống đến nét dịu dàng trong từng cử chỉ.  
+    Hãy trân trọng và dành cho họ những lời chúc ngọt ngào, vì chính họ làm cho cuộc đời này thêm rực rỡ. 🌷
+  </p>
+</section>
+
+<!-- CẢNH 3: HÌNH ẢNH PHỤ NỮ VIỆT -->
+<section id="scene3" class="scene">
+  <h1 class="fade-in">Hình ảnh đẹp của Phụ Nữ Việt Nam</h1>
+  <img src="https://images.pexels.com/photos/33603012/pexels-photo-33603012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Phụ nữ Việt Nam mặc áo dài truyền thống" 
+       style="width:60%; max-width:600px; border-radius:20px; margin-top:20px; box-shadow:0 0 30px rgba(255,255,255,0.8);">
+  <p class="fade-in" style="margin-top:20px; animation-delay: 1s;">
+    Dáng áo dài dịu dàng, nụ cười hiền hậu – hình ảnh người phụ nữ Việt Nam luôn là biểu tượng của sự nhân ái và hy sinh.  
+    Họ mang trong tim lòng tự hào dân tộc và tinh thần bất khuất, vượt qua mọi khó khăn để vun đắp cho hạnh phúc và tương lai.
+  </p>
+</section>
+
+<!-- CẢNH 4: LỜI CHÚC KẾT -->
+<section id="scene4" class="scene">
+  <h1 class="fade-in">🌼 Lời chúc gửi đến phụ nữ Việt 🌼</h1>
+  <p class="fade-in" style="animation-delay:1s;">
+    Chúc tất cả phụ nữ Việt Nam luôn xinh đẹp, mạnh mẽ và hạnh phúc.  
+    Dù là ở bất kỳ vai trò nào – người mẹ, người vợ hay người bạn –  
+    các bạn luôn xứng đáng nhận được sự yêu thương và trân trọng.  
+    Hãy luôn tự tin, yêu đời và tỏa sáng như những đóa hoa rực rỡ trong ngày đặc biệt này! 💐
+  </p>
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/d9by6u.mp3" type="audio/mpeg">
+  </audio>
+</section>
+
+<script>
+  const scenes = document.querySelectorAll('.scene');
+  let current_scene = 0;
+  const transitionTime = 5000; // Thời gian mỗi scene (5 giây)
+
+  function showNextScene() {
+    scenes.forEach((scene, index) => {
+      scene.classList.remove('active');
+      if (index === current_scene) {
+        scene.classList.add('active');
+        // Reset fade-in animations
+        const fadeElements = scene.querySelectorAll('.fade-in');
+        fadeElements.forEach(el => {
+          el.style.animation = 'none';
+          el.offsetHeight; // Trigger reflow
+          el.style.animation = '';
+        });
+      }
+    });
+
+    current_scene = (current_scene + 1) % scenes.length;
+  }
+
+  // Bắt đầu chuyển tự động
+  setInterval(showNextScene, transitionTime);
+
+  // Tạo hiệu ứng hoa rơi đa dạng hơn, rực rỡ
+  for (let i = 0; i < 20; i++) { // Tăng số lượng petal
+    const petal = document.createElement('div');
+    petal.classList.add('petal');
+    petal.style.setProperty('--left', Math.random());
+    petal.style.setProperty('--delay', Math.random());
+    petal.style.setProperty('--scale', 0.6 + Math.random() * 0.8);
+    petal.style.setProperty('--rotate', Math.random() * 360 + 'deg');
+    const colors = ['rgba(255, 105, 180, 0.8)', 'rgba(255, 20, 147, 0.7)', 'rgba(255, 182, 193, 0.9)', 'rgba(219, 112, 147, 0.8)']; // Màu rực rỡ biến thiên
+    petal.style.background = colors[Math.floor(Math.random() * colors.length)];
+    document.body.appendChild(petal);
+  }
+</script>
+
+</body>
+</html>
