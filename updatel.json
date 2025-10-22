@@ -7,6 +7,13 @@
     "allowOffline": true
   },
   {
+    "id": "c6f18ef0681addf9",
+    "username": "vankhang",
+    "password": "123456",
+    "expiresAt": "2025-12-31",
+    "allowOffline": true
+  },
+  {
     "id": "00525a621ce7451e",
     "username": "giakiet",
     "password": "11111",
